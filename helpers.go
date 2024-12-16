@@ -20,7 +20,7 @@ type moduleData struct {
 //go:linkname findType github.com/go-delve/delve/pkg/proc.(*BinaryInfo).findType
 func findType(bi *proc.BinaryInfo, name string) (godwarf.Type, error)
 
-//go:linkname loadModuleData github.com/go-delve/delve/pkg/proc.loadModuleData
+//go:linkname loadModuleData github.com/go-delve/delve/pkg/proc.LoadModuleData
 func loadModuleData(bi *proc.BinaryInfo, mem proc.MemoryReadWriter) ([]moduleData, error)
 
 //go:linkname imageToModuleData github.com/go-delve/delve/pkg/proc.(*BinaryInfo).imageToModuleData
