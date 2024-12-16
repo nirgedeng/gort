@@ -5,7 +5,7 @@ import (
 	"log"
 	"reflect"
 
-	"github.com/lsg2020/gort"
+	"github.com/nirgedeng/gort"
 )
 
 type testStruct struct {
