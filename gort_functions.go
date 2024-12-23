@@ -180,7 +180,7 @@ func (d *DwarfRT) getFunctionArgTypes(f *proc.Function) ([]reflect.Type, []refle
 			break
 		}
 		if child.Tag != dwarf.TagFormalParameter {
-			continue
+			break
 		}
 
 		dtyp, err := entryType(dwarfData, child)
